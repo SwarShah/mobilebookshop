@@ -1,0 +1,376 @@
+<!--
+Title: Term Project
+Name: Swar Shah
+Student Number: C0647456
+Date: 4/20/2015
+
+Used Following
+Light Box: http://lokeshdhakar.com/projects/lightbox2/
+Responsive Slides: http://responsiveslides.com/
+-->
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="icon" href="images/favicon.ico" >
+	<link rel="stylesheet" href="style/finalTheme.min.css" />
+	<link rel="stylesheet" href="style/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="http://responsiveslides.com/responsiveslides.min.js"></script>
+	<script src="http://lokeshdhakar.com/projects/lightbox2/js/lightbox.min.js"></script>
+	<link rel="stylesheet" href="http://lokeshdhakar.com/projects/lightbox2/css/lightbox.css" />
+	<style>
+		.rslides {
+			  position: relative;
+			  list-style: none;
+			  overflow: hidden;
+			  width: 100%;
+			  height: 70%;
+			  padding: 0;
+			  margin: 0;
+			  }
+
+			.rslides li {
+			  -webkit-backface-visibility: hidden;
+			  position: absolute;
+			  display: none;
+			  width: 100%;
+			  height: 70%;
+			  left: 0;
+			  top: 0;
+			  }
+
+			.rslides li:first-child {
+			  position: relative;
+			  display: block;
+			  float: left;
+			  }
+
+			.rslides img {
+			  display: block;
+			  height: auto;
+			  float: left;
+			  width: 100%;
+			  height: 70%;
+			  border: 0;
+		}
+	</style>
+	<script>
+		  $(function() {
+			$(".rslides").responsiveSlides();
+		  });
+	</script>
+</head>
+<body>
+	<!-- HOME -->
+	<div data-role="page" id="home">
+	
+		<header data-role="header">
+		<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
+			<h1>SWAR BOOKSHOP</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#books" data-icon="shop" data-transition="fade">Books</a></li>
+					<li><a href="#contactus" data-icon="mail" data-transition="fade">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<section data-role="content" id="content">
+			<center><h2>FEATURED BOOKS</h2></center>
+			
+			<ul class="rslides">
+				<li><img src="images/cover1.jpg" alt=""></li>
+				<li><img src="images/cover2.jpg" alt=""></li>
+				<li><img src="images/cover3.jpg" alt=""></li>
+			</ul>
+
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#company">Company</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#upcoming">Upcoming Books</a></li>
+			</ul>
+    	</section>
+		
+		<footer data-role="footer">
+        	<h4>&copy; 2015 Swar Shah</h4>
+    	</footer>
+		
+	</div>
+	<!-- END HOME -->
+	
+	<!-- BOOKS -->
+	<div data-role="page" id="books">
+	
+		<header data-role="header">
+			<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
+			<h1>SWAR BOOKSHOP</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-transition="fade">Home</a></li>
+					<li><a href="#books" data-icon="shop" class="ui-btn-active">Books</a></li>
+					<li><a href="#contactus" data-icon="mail" data-transition="fade">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<section data-role="content" id="content">
+		<h1><center>BOOKS</center></h1>
+		<div class="ui-grid-b">
+		  <div class="ui-block-a" align="center">
+			<a href="#" class="ui-btn ui-corner-all ui-disabled ui-btn-active">Category</a><br>
+			<p><img src="images/TheBetrayers.jpg" height="100" width="80"/></p></br>
+			<p><img src="images/2.jpg" height="100" width="80"/></p></br>
+			<p><img src="images/3.jpg" height="100" width="80"/></p></br>
+			<p><img src="images/4.jpg" height="100" width="80"/></p></br>
+			<p><img src="images/5.jpg" height="100" width="80"/></p></br>
+			<p><img src="images/6.jpg" height="100" width="80"/></p></br>
+			<p><img src="images/7.jpg" height="100" width="80"/></p></br>
+			<p><img src="images/8.jpg" height="100" width="80"/></p></br>
+			<p><img src="images/9.jpg" height="100" width="80"/></p></br>
+			<p><img src="images/10.jpg" height="100" width="80"/></p></br>
+		  </div>
+		  <div class="ui-block-b" align="center" valign="center">
+			<a href="#" class="ui-btn ui-corner-all ui-disabled ui-btn-active">Description</a><br>
+			</br></br><p>The Betrayers</p></br></br></br>
+			</br></br><p>The Underachieving School</p></br></br></br>
+			</br></br><p>SQL Server 2012</p></br></br></br>
+			</br></br><p>Pro JavaScript</p></br></br></br>
+			</br></br><p>Computing For Management</p></br></br></br>
+			</br></br><p>Umberto Eco</p></br></br></br>
+			</br></br><p>Linux Thin Client</p></br></br></br>
+			</br></br><p>Sound Design</p></br></br></br>
+			</br></br><p>Adaptive Web Design</p></br></br></br>
+			</br></br><p>Responsive Web Design</p></br></br></br>
+		  </div>
+		  <div class="ui-block-c" align="center">
+			<a href="#" class="ui-btn ui-corner-all ui-disabled ui-btn-active">Price</a><br>
+			</br></br><p>$14.99</p></br></br></br>
+			</br></br><p>$19.99</p></br></br></br>
+			</br></br><p>$49.99</p></br></br></br>
+			</br></br><p>$9.99</p></br></br></br>
+			</br></br><p>$17.99</p></br></br></br>
+			</br></br><p>$12.99</p></br></br></br>
+			</br></br><p>$34.99</p></br></br></br>
+			</br></br><p>$38.99</p></br></br></br>
+			</br></br><p>$22.99</p></br></br></br>
+			</br></br><p>$19.99</p></br></br></br>
+		  </div>
+		</div>
+
+    	</section>
+		
+    	<footer data-role="footer">
+        	<h4>&copy; 2015 Swar Shah</h4>
+    	</footer>
+		
+	</div>
+	<!-- END BOOKS -->
+	
+	<!-- CONTACT US -->
+	<div data-role="page" id="contactus">
+	
+		<header data-role="header">
+			<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
+			<h1>SWAR BOOKSHOP</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-transition="fade">Home</a></li>
+					<li><a href="#books" data-icon="shop" data-transition="fade">Books</a></li>
+					<li><a href="#contactus" data-icon="mail" class="ui-btn-active">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<section data-role="content" id="content">
+			<h1><center>CONTACT US</center></h1>
+			<form action="" method="post">
+				<div data-role="fieldcontain">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" value="" placeholder="Full Name"/>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="orderNum">Order Number:</label>
+					<input type="text" name="orderNum" id="name" value="" placeholder="Order Number"/>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="email">E-mail:</label>
+					<input type="email" name="email" id="email" placeholder="Email address">
+				</div>
+				<div data-role="fieldcontain">
+					<label for="dop">Purchase Date:</label>
+					<input type="date" name="dop" id="dop" placeholder="Purchase Date">
+				</div>
+				<div data-role="fieldcontain">
+					<label for="select-choice-a" class="select">Subject:</label>
+					<select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+					    <option>Select your subject</option>
+					    <option value="standard">Facing a Technical Error</option>
+					    <option value="rush">Payment Related Query</option>
+					    <option value="express">Other Queries</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Payment Method:</legend>
+						<input type="radio" name="radio-choice-1" id="radio-choice-1" value="credit" checked="checked">
+						<label for="radio-choice-1">Credit</label>
+						<input type="radio" name="radio-choice-1" id="radio-choice-2" value="debit">
+						<label for="radio-choice-2">Debit</label>
+						<input type="radio" name="radio-choice-1" id="radio-choice-3" value="paypal">
+						<label for="radio-choice-3">PayPal</label>
+					</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="contactMethod">Contact Method:</label>
+					<input type="checkbox" data-role="flipswitch" name="contactMethod" id="contactMethod" data-on-text="Phone" data-off-text="Email" data-wrapper-class="custom-size-flipswitch">
+				</div>
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup" data-iconpos="right">
+						<legend>Contact Time:</legend>
+						<input type="checkbox" name="morning" id="morning">
+						<label for="morning">Morning</label>
+						<input type="checkbox" name="noon" id="noon">
+						<label for="noon">Noon</label>
+						<input type="checkbox" name="evening" id="evening">
+						<label for="evening">Evening</label>
+			    	</fieldset>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="rate">Rate Your Experience With Us:</label>
+	    			<input type="range" name="rate" id="rate" data-highlight="true" min="1" max="10" value="4">
+				</div>
+				<div data-role="fieldcontain">
+					<label for="message">Message:</label>
+					<textarea cols="40" rows="15" name="message" id="message" placeholder="Your message"></textarea>
+				</div>
+				<a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="flow" class="ui-shadow ui-btn">Submit</a>
+				<div data-role="popup" id="myPopupDialog">
+				  <div data-role="header">
+					<h1>Acknowledgement</h1>
+				  </div>				  
+				  <div data-role="main" class="ui-content">
+					<p>By clicking ok you are agree that company will contact you about your concern.</p>
+					<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-btn ui-btn-b">Ok</a>
+				  </div>
+			</form>
+    	</section>
+		
+    	<footer data-role="footer">
+        	<h4>&copy; 2015 Swar Shah</h4>
+    	</footer>
+		
+	</div>
+	<!-- END CONTACT US -->
+	
+	<!-- COMPANY -->
+	<div data-role="page" id="company">
+	
+		<header data-role="header">
+			<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
+			<h1>SWAR BOOKSHOP</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#books" data-icon="shop" data-transition="fade">Books</a></li>
+					<li><a href="#contactus" data-icon="mail" data-transition="fade">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<section data-role="content" id="content">
+			<h1><center>COMPANY</center></h1>
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="Search" data-inset="true">
+				<li data-role="list-divider">CEO</li>
+				<li><a href="#">Swar Shah</a></li>
+				<li data-role="list-divider">Full Time</li>
+				<li><a href="#">Madhuri Shah</a></li>
+				<li><a href="#">Bhavana Shah</a></li>
+				<li><a href="#">Umesh Prajapati</a></li>
+				<li><a href="#">John Doe</a></li>
+				<li><a href="#">Richard Roe</a></li>
+				<li data-role="list-divider">Part Time</li>
+				<li><a href="#">John Roe</a></li>
+				<li><a href="#">Jane Doe</a></li>				
+				<li><a href="#">Manoj Shah</a></li>
+				<li><a href="#">Anshi Vasani</a></li>
+			</ul>
+    	</section>
+		
+		<footer data-role="footer">
+        	<h4>&copy; 2015 Swar Shah</h4>
+    	</footer>
+		
+	</div>
+	<!-- END COMPANY -->
+	
+	<!-- ABOUT US -->
+	<div data-role="page" id="about">
+	
+		<header data-role="header">
+			<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
+			<h1>About Us</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#books" data-icon="shop" data-transition="fade">Books</a></li>
+					<li><a href="#contactus" data-icon="mail" data-transition="fade">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<section data-role="content" id="content">
+			<h1><center>ABOUT US</center></h1>
+		<p>We offer wide range of books, magazines, maps, greeting cards and various stationary items in nearly all subjects and different languages. In addition to that we also maintain the stock of bestseller, collectible and first editions of popular books. </p>
+		<p>If you have any query then call or email us. You can also subscribe us by email to get updates about latest offers and discounts.
+		<h3>Our guarantee</h3>
+		<p>Don't worry if you are not satisfied with your purchase we will give full refund including shipping charges. <b>No question asked.</b></p> 
+    	</section>
+		
+		<footer data-role="footer">
+        	<h4>&copy; 2015 Swar Shah</h4>
+    	</footer>
+		
+	</div>
+	<!-- END ABOUT US -->
+	
+	<!-- UPCOMING BOOKS -->
+	<div data-role="page" id="upcoming">
+	
+		<header data-role="header">
+		<center><img src="images/book.png" alt="Logo" height="85px" width="85px"/></center>
+			<h1>SWAR BOOKSHOP</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#books" data-icon="shop" data-transition="fade">Books</a></li>
+					<li><a href="#contactus" data-icon="mail" data-transition="fade">Contact Us</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<section data-role="content" id="content">
+			<center><h1>UPCOMING BOOKS</h1>
+			<a href="images/upcoming1.jpg" data-lightbox="upcoming" data-title="Adaptive Web Design"><img src= "images/upcoming1.jpg" height="150px" width="120px"></a>
+			<h5>Adaptive Web Design</h5>
+			<a href="images/upcoming2.jpg" data-lightbox="upcoming" data-title="Undercover User Experience Design"><img src= "images/upcoming2.jpg" height="150px" width="120px"></a>
+			<h5>Undercover User Experience Design</h5>
+			<a href="images/upcoming3.jpg" data-lightbox="upcoming" data-title="How To Win Social Selling"><img src= "images/upcoming3.jpg" height="150px" width="120px"></a>
+			<h5>How To Win Social Selling</h5>
+			</center>
+    	</section>
+		
+		<footer data-role="footer">
+        	<h4>&copy; 2015 Swar Shah</h4>
+    	</footer>
+		
+	</div>
+	<!-- END UPCOMING BOOKS -->
+</body>
+</html>
